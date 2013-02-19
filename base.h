@@ -14,7 +14,7 @@ void	actualiser(void);
 
 
 //STRUCTURE Ray Tracer
-typedef struct	s_pos
+typedef struct	vector3
 {
 	int	x;
 	int	y;
@@ -22,6 +22,18 @@ typedef struct	s_pos
 }	t_pos;
 
 
+typedef	struct s_camera
+{
+	vector3	cpos;
+	vector3	cvector;
+	int	focale;
+}	t_camera;
+
+typedef	struct	s_sphere
+{
+	vector3	cpos;
+	int	rayon;
+}	t_sphere;
 
 
 //
